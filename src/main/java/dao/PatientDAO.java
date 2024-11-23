@@ -19,7 +19,7 @@ public class PatientDAO {
         this.conn = conn;
     }
     
-    public void save(PatientModel patient) throws SQLException {
+    public PatientModel save(PatientModel patient) throws SQLException {
         final String INSERT_PATIENT = "INSERT INTO patients (full_name, birth_date, address, phone, email) VALUES (?, ?, ?, ?, ?)";
         
         PreparedStatement statement = conn.prepareStatement(INSERT_PATIENT, Statement.RETURN_GENERATED_KEYS);
@@ -38,6 +38,8 @@ public class PatientDAO {
                 }
             }
         }
+        
+        return patient;
     }
     
     public Optional<PatientModel> findById(Long id) throws SQLException {
@@ -67,7 +69,7 @@ public class PatientDAO {
         return patients;
     }
     
-    public void update(PatientModel patient) throws SQLException {
+    public PatientModel update(PatientModel patient) throws SQLException {
         final String UPDATE_PATIENT = "UPDATE patients SET full_name = ?, birth_date = ?, address = ?, phone = ?, email = ? WHERE id = ?";
         
         PreparedStatement statement = conn.prepareStatement(UPDATE_PATIENT);
@@ -80,6 +82,8 @@ public class PatientDAO {
         statement.setLong(6, patient.getId());
 
         statement.executeUpdate();
+        
+        return patient;
     }
     
     public void delete(Long id) throws SQLException {
