@@ -19,6 +19,6 @@ public class SchedulingDAO {
         final String INSERT_PATIENT = "INSERT INTO patients (full_name, birth_date, address, phone, email) VALUES (?, ?, ?, ?, ?)";
         
         PreparedStatement statement = conn.prepareStatement(INSERT_PATIENT, Statement.RETURN_GENERATED_KEYS);
-        
+       return null; 
     }
 }
