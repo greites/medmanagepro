@@ -3,16 +3,17 @@ package model;
 import java.time.LocalDate;
 
 public class PatientModel {
-    private Long id;
+    private int id;
     private String fullName;
     private LocalDate birthDate;
     private String address;
     private String phone;
     private String email;
 
+    // Constructors
     public PatientModel() {}
 
-    public PatientModel(Long id, String fullName, LocalDate birthDate, String address, String phone, String email) {
+    public PatientModel(int id, String fullName, LocalDate birthDate, String address, String phone, String email) {
         this.id = id;
         this.fullName = fullName;
         this.birthDate = birthDate;
@@ -21,11 +22,12 @@ public class PatientModel {
         this.email = email;
     }
 
-    public Long getId() {
+    // Getters and Setters
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -68,6 +70,5 @@ public class PatientModel {
     public void setEmail(String email) {
         this.email = email;
     }
-    
 }
 

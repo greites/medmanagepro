@@ -1,13 +1,13 @@
 package controller;
 
 import dao.PatientDAO;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 import model.PatientModel;
 import service.Date;
-import service.Email;
 import service.Phone;
+import service.Email;
 
 public class PatientController {
     
@@ -17,38 +17,38 @@ public class PatientController {
         this.patientDAO = patientDAO;
     }
     
-    public PatientModel create(String name, String nasc, String address, String phone, String email) throws Exception {
-        LocalDate newDate = Date.format(nasc);
-        
-        Phone.validate(phone);
-        Email.validate(email);     
-        
-        PatientModel patient = new PatientModel(null, name, newDate, address, phone, email);
-        return patientDAO.save(patient);
-    }
-    
-    public Optional<PatientModel> get(String id) throws Exception {
-        Long newId = Long.valueOf(id);
-        return patientDAO.findById(newId);
-    }
-    
-    public List<PatientModel> getAll() throws Exception {
-        return patientDAO.findAll();
-    }
-    
-    public PatientModel update(String id, String name, String nasc, String address, String phone, String email) throws Exception {
-        Long newId = Long.valueOf(id);
+    public void create(String name,String nasc,String address,String phone,String email) throws SQLException {
         LocalDate newDate = Date.format(nasc);
         
         Phone.validate(phone);
         Email.validate(email);
         
-        PatientModel patient = new PatientModel(newId, name, newDate, address, phone, email);
-        return patientDAO.update(patient);
+        PatientModel patient = new PatientModel(0, name, newDate, address, phone, email);
+        patientDAO.save(patient);
     }
     
-    public void delete(String id) throws Exception {
-        Long newId = Long.valueOf(id);
+    public PatientModel get(String id) throws SQLException {
+        int newId = Integer.parseInt(id);
+        return patientDAO.findById(newId).get();
+    }
+    
+    public List<PatientModel> getAll() throws SQLException {
+        return patientDAO.findAll();
+    }
+    
+    public void update(String id, String name,String nasc,String address,String phone,String email) throws SQLException {
+        LocalDate newDate = Date.format(nasc);
+        int newId = Integer.parseInt(id);
+        
+        Phone.validate(phone);
+        Email.validate(email);
+        
+        PatientModel patient = new PatientModel(newId, name, newDate, address, phone, email);
+        patientDAO.update(patient);
+    }
+    
+    public void delete(String id) throws SQLException {
+        int newId = Integer.parseInt(id);
         patientDAO.delete(newId);
     }
 }

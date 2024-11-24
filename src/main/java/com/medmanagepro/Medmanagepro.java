@@ -4,14 +4,15 @@ import controller.PatientController;
 import dao.DBConnection;
 import dao.PatientDAO;
 import java.sql.Connection;
+import java.sql.SQLException;
 import view.PatientView;
 
 public class Medmanagepro {
-    public static String URL = "jdbc:mysql://localhost:3306/med_manage_pro";
+    public static String URL = "jdbc:mysql://localhost:3306/medicalclinic";
     public static String USER = "root";
     public static String PASSWORD = "";
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         DBConnection db = new DBConnection(URL, USER, PASSWORD);
         Connection conn = db.getConnection();
         

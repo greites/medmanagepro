@@ -3,30 +3,32 @@ package model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class SchedulingModel {
-    private Long id;
+public class AppointmentModel {
+    private int id;
     private PatientModel patient;
-    private LocalDate appointmentDate;
+    private LocalDate date;
     private LocalTime time;
     private String doctor;
     private String notes;
 
-    public SchedulingModel() {}
+    // Constructors
+    public AppointmentModel() {}
 
-    public SchedulingModel(Long id, PatientModel patient, LocalDate appointmentDate, LocalTime time, String doctor, String notes) {
+    public AppointmentModel(int id, PatientModel patient, LocalDate appointmentDate, LocalTime appointmentTime, String doctor, String notes) {
         this.id = id;
         this.patient = patient;
-        this.appointmentDate = appointmentDate;
-        this.time = time;
+        this.date = appointmentDate;
+        this.time = appointmentTime;
         this.doctor = doctor;
         this.notes = notes;
     }
 
-    public Long getId() {
+    // Getters and Setters
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -38,12 +40,12 @@ public class SchedulingModel {
         this.patient = patient;
     }
 
-    public LocalDate getAppointmentDate() {
-        return appointmentDate;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setAppointmentDate(LocalDate appointmentDate) {
-        this.appointmentDate = appointmentDate;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public LocalTime getTime() {
@@ -53,6 +55,8 @@ public class SchedulingModel {
     public void setTime(LocalTime time) {
         this.time = time;
     }
+    
+    
 
     public String getDoctor() {
         return doctor;

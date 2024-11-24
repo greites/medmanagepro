@@ -1,18 +1,17 @@
 package service;
 
-import errors.InvalidDateException;
 import java.time.DateTimeException;
-import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public final class Date {
-    
-    public static LocalDate format(String date) {
+public class Time {
+    public static LocalTime format(String time) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         try {
-            return LocalDate.parse(date, formatter);
+            return LocalTime.parse(time, formatter);
         } catch (DateTimeException e) {
-            throw new InvalidDateException();
+            //throw new InvalidDateException();
+            return null;
         }   
     } 
 }
