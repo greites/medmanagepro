@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class MedicalRecordModel {
     private int id;
     private PatientModel patient;
-    private LocalDate consultationDate;
+    private LocalDate date;
     private String symptoms;
     private String diagnosis;
     private String treatment;
@@ -13,10 +13,10 @@ public class MedicalRecordModel {
     // Constructors
     public MedicalRecordModel() {}
 
-    public MedicalRecordModel(int id, PatientModel patient, LocalDate consultationDate, String symptoms, String diagnosis, String treatment) {
+    public MedicalRecordModel(int id, PatientModel patient, LocalDate date, String symptoms, String diagnosis, String treatment) {
         this.id = id;
         this.patient = patient;
-        this.consultationDate = consultationDate;
+        this.date = date;
         this.symptoms = symptoms;
         this.diagnosis = diagnosis;
         this.treatment = treatment;
@@ -39,12 +39,12 @@ public class MedicalRecordModel {
         this.patient = patient;
     }
 
-    public LocalDate getConsultationDate() {
-        return consultationDate;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setConsultationDate(LocalDate consultationDate) {
-        this.consultationDate = consultationDate;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public String getSymptoms() {
