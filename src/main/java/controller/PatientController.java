@@ -43,7 +43,6 @@ public class PatientController {
         Phone.validate(phone);
         Email.validate(email);
         
-        
         PatientModel patient = new PatientModel(newId, name, newDate, address, phone, email);
         return patientDAO.update(patient);
     }
