@@ -26,17 +26,153 @@ public class MedicalRecordsView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        searchField1 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        patientTable1 = new javax.swing.JTable();
+        searchButton2 = new javax.swing.JButton();
+        deleteButton1 = new javax.swing.JButton();
+        changeButton2 = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
+        searchField2 = new javax.swing.JTextField();
+        deleteButton2 = new javax.swing.JButton();
+        searchButton3 = new javax.swing.JButton();
+        changeButton3 = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        patientTable2 = new javax.swing.JTable();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        patientTable3 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
+        searchButton = new javax.swing.JButton();
+        changeButton = new javax.swing.JButton();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        patientTable4 = new javax.swing.JTable();
+        searchField3 = new javax.swing.JTextField();
+        searchButton4 = new javax.swing.JButton();
+        changeButton4 = new javax.swing.JButton();
+        deleteButton3 = new javax.swing.JButton();
+        jSeparator3 = new javax.swing.JSeparator();
+        searchButton1 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+
+        searchField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchField1ActionPerformed(evt);
+            }
+        });
+
+        patientTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "paciente", "medico", "data", "hora", "observaçoes"
+            }
+        ));
+        patientTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                patientTable1MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(patientTable1);
+
+        searchButton2.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton2.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton2.setText("Pesquisar");
+        searchButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButton2ActionPerformed(evt);
+            }
+        });
+
+        deleteButton1.setBackground(new java.awt.Color(255, 51, 51));
+        deleteButton1.setForeground(new java.awt.Color(255, 255, 255));
+        deleteButton1.setText("Excluir");
+        deleteButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButton1ActionPerformed(evt);
+            }
+        });
+
+        changeButton2.setBackground(new java.awt.Color(0, 204, 0));
+        changeButton2.setForeground(new java.awt.Color(255, 255, 255));
+        changeButton2.setText("Alterar");
+        changeButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeButton2ActionPerformed(evt);
+            }
+        });
+
+        searchField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchField2ActionPerformed(evt);
+            }
+        });
+
+        deleteButton2.setBackground(new java.awt.Color(255, 51, 51));
+        deleteButton2.setForeground(new java.awt.Color(255, 255, 255));
+        deleteButton2.setText("Excluir");
+        deleteButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButton2ActionPerformed(evt);
+            }
+        });
+
+        searchButton3.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton3.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton3.setText("Pesquisar");
+        searchButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButton3ActionPerformed(evt);
+            }
+        });
+
+        changeButton3.setBackground(new java.awt.Color(0, 204, 0));
+        changeButton3.setForeground(new java.awt.Color(255, 255, 255));
+        changeButton3.setText("Alterar");
+        changeButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeButton3ActionPerformed(evt);
+            }
+        });
+
+        patientTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "paciente", "medico", "data", "hora", "observaçoes"
+            }
+        ));
+        patientTable2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                patientTable2MouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(patientTable2);
+
+        patientTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "paciente", "medico", "data", "hora", "observaçoes"
+            }
+        ));
+        patientTable3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                patientTable3MouseClicked(evt);
+            }
+        });
+        jScrollPane4.setViewportView(patientTable3);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 800));
@@ -45,35 +181,107 @@ public class MedicalRecordsView extends javax.swing.JFrame {
         jLabel1.setText("PRONTUARIO MEDICO");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel2.setText("Nome do paciente");
+        jLabel2.setText("ID Paciente");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel3.setText("Data da consulta");
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setText("Sintomas");
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setText("Diagnostico");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setText("Tratamento");
 
-        jTextField1.setText("jTextField1");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
-        jTextField2.setText("jTextField1");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
-        jTextField3.setText("jTextField1");
+        searchButton.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton.setText("Limpar");
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButtonActionPerformed(evt);
+            }
+        });
+
+        changeButton.setBackground(new java.awt.Color(0, 204, 0));
+        changeButton.setForeground(new java.awt.Color(255, 255, 255));
+        changeButton.setText("Adicionar");
+        changeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeButtonActionPerformed(evt);
+            }
+        });
+
+        patientTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "paciente", "data", "sintomas", "diagnostico", "tratamento"
+            }
+        ));
+        patientTable4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                patientTable4MouseClicked(evt);
+            }
+        });
+        jScrollPane5.setViewportView(patientTable4);
+
+        searchField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchField3ActionPerformed(evt);
+            }
+        });
+
+        searchButton4.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton4.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton4.setText("Pesquisar");
+        searchButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButton4ActionPerformed(evt);
+            }
+        });
+
+        changeButton4.setBackground(new java.awt.Color(0, 204, 0));
+        changeButton4.setForeground(new java.awt.Color(255, 255, 255));
+        changeButton4.setText("Alterar");
+        changeButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeButton4ActionPerformed(evt);
+            }
+        });
+
+        deleteButton3.setBackground(new java.awt.Color(255, 51, 51));
+        deleteButton3.setForeground(new java.awt.Color(255, 255, 255));
+        deleteButton3.setText("Excluir");
+        deleteButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButton3ActionPerformed(evt);
+            }
+        });
+
+        searchButton1.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton1.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton1.setText("Limpar");
+        searchButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,26 +292,51 @@ public class MedicalRecordsView extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(128, 128, 128)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(189, 189, 189)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3)))
-                            .addComponent(jLabel5)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(253, 253, 253)
-                        .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(205, 205, 205)
+                                .addComponent(changeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)
+                                .addComponent(searchButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(874, 874, 874)
+                                .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(280, 280, 280)
+                                .addComponent(jLabel6))
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(354, 354, 354)
-                        .addComponent(jLabel6)))
-                .addContainerGap(409, Short.MAX_VALUE))
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(348, 348, 348)
+                        .addComponent(jLabel5))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(126, 126, 126)
+                        .addComponent(searchField3, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(searchButton4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(changeButton4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(deleteButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 674, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(347, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,21 +349,36 @@ public class MedicalRecordsView extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(changeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(searchField3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchButton4)
+                    .addComponent(deleteButton3)
+                    .addComponent(changeButton4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(135, Short.MAX_VALUE))
         );
 
         pack();
@@ -143,6 +391,190 @@ public class MedicalRecordsView extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
+
+    }//GEN-LAST:event_searchButtonActionPerformed
+
+    private void changeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeButtonActionPerformed
+
+    }//GEN-LAST:event_changeButtonActionPerformed
+
+    private void searchField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchField1ActionPerformed
+
+    private void searchButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton2ActionPerformed
+        String search = searchField.getText();
+        if(search.isBlank()) {
+            getAllToTable();
+        }else {
+            getByIdToTable(search);
+        }
+    }//GEN-LAST:event_searchButton2ActionPerformed
+
+    private void changeButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeButton2ActionPerformed
+        String id = idField.getText();
+        String name = nameField.getText();
+        String nasc = nascField.getText();
+        String address = addressField.getText();
+        String phone = phoneField.getText();
+        String email = emailField.getText();
+
+        try {
+            controller.update(id, name, nasc, address, phone, email);
+        } catch (InvalidDateException | InvalidPhoneException | InvalidEmailException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+            return;
+        } catch (Exception e) {
+            System.out.println("changeButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_changeButton2ActionPerformed
+
+    private void deleteButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButton1ActionPerformed
+        String id = idField.getText();
+        try {
+            controller.delete(id);
+        } catch (Exception e) {
+            System.out.println("deleteButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_deleteButton1ActionPerformed
+
+    private void patientTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patientTable1MouseClicked
+        int selectedRow = patientTable.getSelectedRow();
+        if (selectedRow != -1) {
+            idField.setText(patientTable.getValueAt(selectedRow, 0).toString());
+            nameField.setText(patientTable.getValueAt(selectedRow, 1).toString());
+            nascField.setText(patientTable.getValueAt(selectedRow, 2).toString());
+            addressField.setText(patientTable.getValueAt(selectedRow, 3).toString());
+            phoneField.setText(patientTable.getValueAt(selectedRow, 4).toString());
+            emailField.setText(patientTable.getValueAt(selectedRow, 5).toString());
+        }
+    }//GEN-LAST:event_patientTable1MouseClicked
+
+    private void searchField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchField2ActionPerformed
+
+    private void searchButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton3ActionPerformed
+        String search = searchField.getText();
+        if(search.isBlank()) {
+            getAllToTable();
+        }else {
+            getByIdToTable(search);
+        }
+    }//GEN-LAST:event_searchButton3ActionPerformed
+
+    private void changeButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeButton3ActionPerformed
+        String id = idField.getText();
+        String name = nameField.getText();
+        String nasc = nascField.getText();
+        String address = addressField.getText();
+        String phone = phoneField.getText();
+        String email = emailField.getText();
+
+        try {
+            controller.update(id, name, nasc, address, phone, email);
+        } catch (InvalidDateException | InvalidPhoneException | InvalidEmailException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+            return;
+        } catch (Exception e) {
+            System.out.println("changeButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_changeButton3ActionPerformed
+
+    private void deleteButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButton2ActionPerformed
+        String id = idField.getText();
+        try {
+            controller.delete(id);
+        } catch (Exception e) {
+            System.out.println("deleteButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_deleteButton2ActionPerformed
+
+    private void patientTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patientTable2MouseClicked
+        int selectedRow = patientTable.getSelectedRow();
+        if (selectedRow != -1) {
+            idField.setText(patientTable.getValueAt(selectedRow, 0).toString());
+            nameField.setText(patientTable.getValueAt(selectedRow, 1).toString());
+            nascField.setText(patientTable.getValueAt(selectedRow, 2).toString());
+            addressField.setText(patientTable.getValueAt(selectedRow, 3).toString());
+            phoneField.setText(patientTable.getValueAt(selectedRow, 4).toString());
+            emailField.setText(patientTable.getValueAt(selectedRow, 5).toString());
+        }
+    }//GEN-LAST:event_patientTable2MouseClicked
+
+    private void patientTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patientTable3MouseClicked
+        int selectedRow = patientTable.getSelectedRow();
+        if (selectedRow != -1) {
+            idField.setText(patientTable.getValueAt(selectedRow, 0).toString());
+            nameField.setText(patientTable.getValueAt(selectedRow, 1).toString());
+            nascField.setText(patientTable.getValueAt(selectedRow, 2).toString());
+            addressField.setText(patientTable.getValueAt(selectedRow, 3).toString());
+            phoneField.setText(patientTable.getValueAt(selectedRow, 4).toString());
+            emailField.setText(patientTable.getValueAt(selectedRow, 5).toString());
+        }
+    }//GEN-LAST:event_patientTable3MouseClicked
+
+    private void patientTable4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patientTable4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_patientTable4MouseClicked
+
+    private void searchField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchField3ActionPerformed
+
+    private void searchButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton4ActionPerformed
+        String search = searchField.getText();
+        if(search.isBlank()) {
+            getAllToTable();
+        }else {
+            getByIdToTable(search);
+        }
+    }//GEN-LAST:event_searchButton4ActionPerformed
+
+    private void changeButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeButton4ActionPerformed
+        String id = idField.getText();
+        String name = nameField.getText();
+        String nasc = nascField.getText();
+        String address = addressField.getText();
+        String phone = phoneField.getText();
+        String email = emailField.getText();
+
+        try {
+            controller.update(id, name, nasc, address, phone, email);
+        } catch (InvalidDateException | InvalidPhoneException | InvalidEmailException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+            return;
+        } catch (Exception e) {
+            System.out.println("changeButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_changeButton4ActionPerformed
+
+    private void deleteButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButton3ActionPerformed
+        String id = idField.getText();
+        try {
+            controller.delete(id);
+        } catch (Exception e) {
+            System.out.println("deleteButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_deleteButton3ActionPerformed
+
+    private void searchButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton1ActionPerformed
+
+    }//GEN-LAST:event_searchButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,16 +612,41 @@ public class MedicalRecordsView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton changeButton;
+    private javax.swing.JButton changeButton2;
+    private javax.swing.JButton changeButton3;
+    private javax.swing.JButton changeButton4;
+    private javax.swing.JButton deleteButton1;
+    private javax.swing.JButton deleteButton2;
+    private javax.swing.JButton deleteButton3;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTable patientTable1;
+    private javax.swing.JTable patientTable2;
+    private javax.swing.JTable patientTable3;
+    private javax.swing.JTable patientTable4;
+    private javax.swing.JButton searchButton;
+    private javax.swing.JButton searchButton1;
+    private javax.swing.JButton searchButton2;
+    private javax.swing.JButton searchButton3;
+    private javax.swing.JButton searchButton4;
+    private javax.swing.JTextField searchField1;
+    private javax.swing.JTextField searchField2;
+    private javax.swing.JTextField searchField3;
     // End of variables declaration//GEN-END:variables
 }
