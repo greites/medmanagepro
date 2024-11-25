@@ -27,6 +27,12 @@ public class SchedulingView extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField4 = new javax.swing.JTextField();
+        changeButton1 = new javax.swing.JButton();
+        deleteButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        patientTable = new javax.swing.JTable();
+        searchField = new javax.swing.JTextField();
+        searchButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -41,12 +47,66 @@ public class SchedulingView extends javax.swing.JFrame {
         changeButton = new javax.swing.JButton();
         searchButton = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
+        changeButton2 = new javax.swing.JButton();
+        deleteButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        patientTable1 = new javax.swing.JTable();
+        searchField1 = new javax.swing.JTextField();
+        searchButton2 = new javax.swing.JButton();
 
         jTextField4.setText("Miguel moraisf saakdsjf oasdmasol");
         jTextField4.setPreferredSize(new java.awt.Dimension(200, 32));
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
+            }
+        });
+
+        changeButton1.setBackground(new java.awt.Color(0, 204, 0));
+        changeButton1.setForeground(new java.awt.Color(255, 255, 255));
+        changeButton1.setText("Alterar");
+        changeButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeButton1ActionPerformed(evt);
+            }
+        });
+
+        deleteButton.setBackground(new java.awt.Color(255, 51, 51));
+        deleteButton.setForeground(new java.awt.Color(255, 255, 255));
+        deleteButton.setText("Excluir");
+        deleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButtonActionPerformed(evt);
+            }
+        });
+
+        patientTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "id", "nome", "nascimento", "endereço", "telefone", "email"
+            }
+        ));
+        patientTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                patientTableMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(patientTable);
+
+        searchField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchFieldActionPerformed(evt);
+            }
+        });
+
+        searchButton1.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton1.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton1.setText("Pesquisar");
+        searchButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButton1ActionPerformed(evt);
             }
         });
 
@@ -130,44 +190,107 @@ public class SchedulingView extends javax.swing.JFrame {
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
+        changeButton2.setBackground(new java.awt.Color(0, 204, 0));
+        changeButton2.setForeground(new java.awt.Color(255, 255, 255));
+        changeButton2.setText("Alterar");
+        changeButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeButton2ActionPerformed(evt);
+            }
+        });
+
+        deleteButton1.setBackground(new java.awt.Color(255, 51, 51));
+        deleteButton1.setForeground(new java.awt.Color(255, 255, 255));
+        deleteButton1.setText("Excluir");
+        deleteButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButton1ActionPerformed(evt);
+            }
+        });
+
+        patientTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "id", "nome", "nascimento", "endereço", "telefone", "email"
+            }
+        ));
+        patientTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                patientTable1MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(patientTable1);
+
+        searchField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchField1ActionPerformed(evt);
+            }
+        });
+
+        searchButton2.setBackground(new java.awt.Color(0, 153, 255));
+        searchButton2.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton2.setText("Pesquisar");
+        searchButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(62, 62, 62)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(54, 54, 54)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(69, 69, 69))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(289, 289, 289)
-                                .addComponent(jLabel6))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(202, 202, 202)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(283, 283, 283)
-                        .addComponent(changeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(searchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(75, Short.MAX_VALUE))
+                        .addComponent(searchButton2)
+                        .addGap(197, 197, 197))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(68, 68, 68)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGap(62, 62, 62)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel2)
+                                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel3)
+                                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(54, 54, 54)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel4)
+                                            .addComponent(jLabel5)
+                                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(69, 69, 69))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(289, 289, 289)
+                                        .addComponent(jLabel6))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(202, 202, 202)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(deleteButton1)
+                                .addGap(108, 108, 108)
+                                .addComponent(changeButton2)))
+                        .addGap(0, 69, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(281, 281, 281)
+                .addComponent(changeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,11 +320,21 @@ public class SchedulingView extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(changeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(searchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(searchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchButton2))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(deleteButton1)
+                    .addComponent(changeButton2))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         pack();
@@ -243,6 +376,118 @@ public class SchedulingView extends javax.swing.JFrame {
 
     }//GEN-LAST:event_searchButtonActionPerformed
 
+    private void changeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeButton1ActionPerformed
+        String id = idField.getText();
+        String name = nameField.getText();
+        String nasc = nascField.getText();
+        String address = addressField.getText();
+        String phone = phoneField.getText();
+        String email = emailField.getText();
+
+        try {
+            controller.update(id, name, nasc, address, phone, email);
+        } catch (InvalidDateException | InvalidPhoneException | InvalidEmailException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+            return;
+        } catch (Exception e) {
+            System.out.println("changeButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_changeButton1ActionPerformed
+
+    private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
+        String id = idField.getText();
+        try {
+            controller.delete(id);
+        } catch (Exception e) {
+            System.out.println("deleteButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_deleteButtonActionPerformed
+
+    private void patientTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patientTableMouseClicked
+        int selectedRow = patientTable.getSelectedRow();
+        if (selectedRow != -1) {
+            idField.setText(patientTable.getValueAt(selectedRow, 0).toString());
+            nameField.setText(patientTable.getValueAt(selectedRow, 1).toString());
+            nascField.setText(patientTable.getValueAt(selectedRow, 2).toString());
+            addressField.setText(patientTable.getValueAt(selectedRow, 3).toString());
+            phoneField.setText(patientTable.getValueAt(selectedRow, 4).toString());
+            emailField.setText(patientTable.getValueAt(selectedRow, 5).toString());
+        }
+    }//GEN-LAST:event_patientTableMouseClicked
+
+    private void searchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchFieldActionPerformed
+
+    private void searchButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton1ActionPerformed
+        String search = searchField.getText();
+        if(search.isBlank()) {
+            getAllToTable();
+        }else {
+            getByIdToTable(search);
+        }
+    }//GEN-LAST:event_searchButton1ActionPerformed
+
+    private void changeButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeButton2ActionPerformed
+        String id = idField.getText();
+        String name = nameField.getText();
+        String nasc = nascField.getText();
+        String address = addressField.getText();
+        String phone = phoneField.getText();
+        String email = emailField.getText();
+
+        try {
+            controller.update(id, name, nasc, address, phone, email);
+        } catch (InvalidDateException | InvalidPhoneException | InvalidEmailException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+            return;
+        } catch (Exception e) {
+            System.out.println("changeButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_changeButton2ActionPerformed
+
+    private void deleteButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButton1ActionPerformed
+        String id = idField.getText();
+        try {
+            controller.delete(id);
+        } catch (Exception e) {
+            System.out.println("deleteButton");
+        }
+        cleanFields();
+        getAllToTable();
+    }//GEN-LAST:event_deleteButton1ActionPerformed
+
+    private void patientTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patientTable1MouseClicked
+        int selectedRow = patientTable.getSelectedRow();
+        if (selectedRow != -1) {
+            idField.setText(patientTable.getValueAt(selectedRow, 0).toString());
+            nameField.setText(patientTable.getValueAt(selectedRow, 1).toString());
+            nascField.setText(patientTable.getValueAt(selectedRow, 2).toString());
+            addressField.setText(patientTable.getValueAt(selectedRow, 3).toString());
+            phoneField.setText(patientTable.getValueAt(selectedRow, 4).toString());
+            emailField.setText(patientTable.getValueAt(selectedRow, 5).toString());
+        }
+    }//GEN-LAST:event_patientTable1MouseClicked
+
+    private void searchField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchField1ActionPerformed
+
+    private void searchButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton2ActionPerformed
+        String search = searchField.getText();
+        if(search.isBlank()) {
+            getAllToTable();
+        }else {
+            getByIdToTable(search);
+        }
+    }//GEN-LAST:event_searchButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -279,12 +524,18 @@ public class SchedulingView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton changeButton;
+    private javax.swing.JButton changeButton1;
+    private javax.swing.JButton changeButton2;
+    private javax.swing.JButton deleteButton;
+    private javax.swing.JButton deleteButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
@@ -292,6 +543,12 @@ public class SchedulingView extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTable patientTable;
+    private javax.swing.JTable patientTable1;
     private javax.swing.JButton searchButton;
+    private javax.swing.JButton searchButton1;
+    private javax.swing.JButton searchButton2;
+    private javax.swing.JTextField searchField;
+    private javax.swing.JTextField searchField1;
     // End of variables declaration//GEN-END:variables
 }
