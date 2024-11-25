@@ -66,16 +66,16 @@ public class AppointmentDAO {
     public AppointmentModel update(AppointmentModel appointment) throws SQLException {
         String sql = "UPDATE appointments SET patient_id = ?, appointment_date = ?, appointment_time = ?, doctor = ?, notes = ? WHERE id = ?";
         
-        PreparedStatement statement = conn.prepareStatement(sql);
+        PreparedStatement stmt = conn.prepareStatement(sql);
         
-        statement.setInt(1, appointment.getPatient().getId());
-        statement.setDate(2, Date.valueOf(appointment.getDate()));
-        statement.setTime(3, Time.valueOf(appointment.getTime()));
-        statement.setString(4, appointment.getDoctor());
-        statement.setString(5, appointment.getNotes());
-        statement.setInt(6, appointment.getId());
+        stmt.setInt(1, appointment.getPatient().getId());
+        stmt.setDate(2, Date.valueOf(appointment.getDate()));
+        stmt.setTime(3, Time.valueOf(appointment.getTime()));
+        stmt.setString(4, appointment.getDoctor());
+        stmt.setString(5, appointment.getNotes());
+        stmt.setInt(6, appointment.getId());
 
-        statement.executeUpdate();
+        stmt.executeUpdate();
         
         return appointment;
     }
